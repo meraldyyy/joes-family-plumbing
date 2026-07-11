@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+/* =========================
+   Theme
+========================= */
+
+@theme {
+  --color-primary: #0b5fff;
+  --color-secondary: #ff7a00;
+  --color-dark: #111827;
+  --color-bg: #f8fafc;
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --radius-soft: 12px;
+  --radius-softlg: 20px;
+
+  --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --shadow-softlg: 0 20px 60px rgba(15, 23, 42, 0.12);
+}
+
+/* =========================
+   Base
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-dark);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+section {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.15;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* =========================
+   Utilities
+========================= */
+
+.container-custom {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+/* =========================
+   Mobile Optimization
+========================= */
+
+@media (max-width: 1023px) {
+  section {
+    scroll-margin-top: 90px;
+  }
+
+  h1 {
+    line-height: 1.08;
+  }
+
+  h2 {
+    line-height: 1.15;
+  }
+
+  p {
+    line-height: 1.75;
+  }
+
+  .shadow-soft,
+  .shadow-softlg {
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  }
+}
+
+/* =========================
+   Marquee
+========================= */
+
+.marquee-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  width: fit-content;
+  will-change: transform;
+  animation: marquee 18s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.brand-item {
+  flex-shrink: 0;
+}
+
+.brand-item img {
+  display: block;
+  width: auto;
+  height: 70px;
+}
+
+@media (max-width: 768px) {
+  .marquee-track {
+    gap: 2.5rem;
+    animation-duration: 14s;
+  }
+
+  .brand-item img {
+    height: 52px;
+  }
+}
+
+/* =========================
+   Animations
+========================= */
+
+@keyframes flowMove {
+  from {
+    offset-distance: 0%;
+  }
+
+  to {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 2rem));
+  }
+}

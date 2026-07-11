@@ -1,0 +1,37 @@
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 80px;
+
+  animation: scroll 20s linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+.brand {
+  flex-shrink: 0;
+}
+
+.brand img {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-25%);
+  }
+}

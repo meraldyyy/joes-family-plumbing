@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Joe's Family Plumbing | 24/7 Licensed Plumbers</title>
+
+<meta
+  name="description"
+  content="Family-owned, licensed plumbing experts serving homes and businesses for over 40 years. Same-day service, transparent pricing, 24/7 emergency response."
+/>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #111827; }
+  h1,h2,h3,h4,.font-heading { font-family: 'Poppins', sans-serif; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  }
+
+  /* Scroll reveal */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.in-view { opacity: 1; transform: translateY(0); }
+  .reveal-left { opacity: 0; transform: translateX(-32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal-left.in-view { opacity: 1; transform: translateX(0); }
+  .reveal-right { opacity: 0; transform: translateX(32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal-right.in-view { opacity: 1; transform: translateX(0); }
+
+  /* Nav */
+  #mainNav { transition: background-color 0.35s ease, box-shadow 0.35s ease, padding 0.35s ease; }
+  #mainNav.scrolled { background-color: rgba(255,255,255,0.96); backdrop-filter: blur(8px); box-shadow: 0 4px 20px -8px rgba(17,24,39,0.15); }
+
+  /* Marquee */
+  .marquee-track { display: flex; width: max-content; animation: marquee 28s linear infinite; }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .marquee-wrap:hover .marquee-track { animation-play-state: paused; }
+
+  /* Counter */
+  .counter { font-variant-numeric: tabular-nums; }
+
+  /* Signature: response line (pipe + flowing droplet) */
+  .flow-line { stroke-dasharray: 6 10; animation: dash 3s linear infinite; }
+  @keyframes dash { to { stroke-dashoffset: -160; } }
+  .flow-drop { animation: dropmove 4s ease-in-out infinite; }
+  @keyframes dropmove {
+    0% { offset-distance: 0%; opacity: 0; }
+    8% { opacity: 1; }
+    92% { opacity: 1; }
+    100% { offset-distance: 100%; opacity: 0; }
+  }
+
+  /* Accordion */
+  .faq-panel { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; }
+  .faq-item.open .faq-panel { max-height: 400px; }
+  .faq-item.open .faq-chevron { transform: rotate(180deg); }
+  .faq-chevron { transition: transform 0.3s ease; }
+
+  /* Card hover */
+  .service-card { transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease; }
+  .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px -15px rgba(11,95,255,0.25); border-color: #0B5FFF; }
+
+  .brand-badge { filter: grayscale(1); opacity: 0.55; transition: filter 0.35s ease, opacity 0.35s ease; }
+  .brand-badge:hover { filter: grayscale(0); opacity: 1; }
+
+  /* Focus states */
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: 3px solid #FF7A00; outline-offset: 2px; border-radius: 6px;
+  }
+
+  .testimonial-slide { display: none; }
+  .testimonial-slide.active { display: block; }
+</style>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
