@@ -15,7 +15,7 @@ export default function Services() {
       title: "Emergency Plumbing",
       description:
         "Rapid dispatch for burst pipes, major leaks, and no-water emergencies, any hour.",
-      image: "./src/assets/h3.png",
+      image: "/assets/h3.png",
       icon: Siren,
       alt: "Plumber fixing a burst pipe",
     },
@@ -23,7 +23,7 @@ export default function Services() {
       title: "Drain Cleaning",
       description:
         "Clear stubborn clogs fast using modern equipment that protects your pipes.",
-      image: "./src/assets/d2.png",
+      image: "/assets/d2.png",
       icon: Waves,
       alt: "Drain cleaning equipment",
     },
@@ -31,7 +31,7 @@ export default function Services() {
       title: "Leak Detection",
       description:
         "Advanced detection technology locates hidden leaks before they become expensive repairs.",
-      image: "./src/assets/d3.png",
+      image: "/assets/d3.png",
       icon: Search,
       alt: "Leak detection service",
     },
@@ -39,7 +39,7 @@ export default function Services() {
       title: "Pipe Repair",
       description:
         "Whether it's a minor repair or complete repiping, we deliver lasting solutions.",
-      image: "./src/assets/d4.png",
+      image: "/assets/d4.png",
       icon: Wrench,
       alt: "Pipe repair",
     },
@@ -47,7 +47,7 @@ export default function Services() {
       title: "Water Heater Repair",
       description:
         "Installation, maintenance, and repair for traditional and tankless water heaters.",
-      image: "./src/assets/d5.png",
+      image: "/assets/d5.png",
       icon: Flame,
       alt: "Water heater installation",
     },
@@ -55,7 +55,7 @@ export default function Services() {
       title: "Bathroom Plumbing",
       description:
         "Complete plumbing services for sinks, toilets, showers, bathtubs, and remodels.",
-      image: "./src/assets/d6.png",
+      image: "/assets/d6.png",
       icon: ShowerHead,
       alt: "Bathroom plumbing",
     },
