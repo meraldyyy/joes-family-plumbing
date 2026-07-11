@@ -36,7 +36,7 @@ export default function About() {
         <FadeIn direction="left">
           <div className="relative order-2 mx-auto w-full max-w-md lg:order-1 lg:max-w-none">
             <img
-              src="./src/assets/family.png"
+              src="/assets/family.png"
               alt="Family-owned plumbing team standing together in front of a service van"
               className="aspect-[4/5] w-full rounded-[28px] object-cover shadow-soft lg:h-[650px] lg:aspect-auto lg:rounded-softlg"
               loading="lazy"
