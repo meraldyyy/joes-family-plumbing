@@ -59,7 +59,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="#top">
             <img
-              src="./src/assets/logo.avif"
+              src="./public/assets/logo.avif"
               alt="Joe's Plumbing"
               className={`w-auto transition-all duration-300 ${
                 isScrolled
