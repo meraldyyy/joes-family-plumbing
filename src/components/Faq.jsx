@@ -44,34 +44,34 @@ export default function Faq() {
   return (
     <section
       id="faq"
-      className="bg-slate-50 py-16 md:py-20 lg:py-28"
+      className="bg-slate-50 py-12 md:py-20 lg:py-28"
     >
-      <div className="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mx-auto mb-14 max-w-3xl text-center">
-          <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-primary">
+        <div className="mx-auto mb-10 max-w-3xl text-center md:mb-14">
+          <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-primary sm:text-xs">
             FAQ
           </span>
 
-          <h2 className="mt-6 text-4xl font-extrabold leading-tight text-dark sm:text-5xl">
+          <h2 className="mt-4 text-3xl font-extrabold leading-tight text-dark sm:text-4xl md:text-5xl">
             Frequently Asked Questions
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-dark/60 sm:text-lg">
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-dark/60 sm:text-base md:text-lg md:leading-8">
             Have questions? Here are the answers to the most common questions
             our customers ask before scheduling plumbing services.
           </p>
         </div>
 
         {/* FAQ */}
-        <div className="space-y-5">
+        <div className="space-y-4 sm:space-y-5">
           {faqs.map((faq, index) => {
             const active = open === index;
 
             return (
               <article
                 key={faq.question}
-                className={`overflow-hidden rounded-3xl border transition-all duration-300 ${
+                className={`overflow-hidden rounded-2xl border transition-all duration-300 sm:rounded-3xl ${
                   active
                     ? "border-primary/20 bg-white shadow-xl"
                     : "border-slate-200 bg-white hover:border-primary/20 hover:shadow-md"
@@ -81,20 +81,20 @@ export default function Faq() {
                   onClick={() => toggleFaq(index)}
                   aria-expanded={active}
                   aria-controls={`faq-${index}`}
-                  className="flex w-full items-center justify-between gap-5 p-6 text-left"
+                  className="flex w-full items-center justify-between gap-4 p-5 text-left sm:gap-5 sm:p-6"
                 >
-                  <span className="text-base font-semibold text-dark sm:text-lg">
+                  <span className="text-sm font-semibold leading-snug text-dark sm:text-base md:text-lg">
                     {faq.question}
                   </span>
 
                   <div
-                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${
+                    className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-all duration-300 sm:h-10 sm:w-10 ${
                       active
                         ? "bg-primary text-white rotate-180"
                         : "bg-primary/10 text-primary"
                     }`}
                   >
-                    <ChevronDown className="h-5 w-5" />
+                    <ChevronDown className="h-4 w-4 sm:h-5 sm:w-5" />
                   </div>
                 </button>
 
@@ -107,7 +107,7 @@ export default function Faq() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-6 pb-6 leading-8 text-dark/60">
+                    <p className="px-5 pb-5 text-sm leading-6 text-dark/60 sm:px-6 sm:pb-6 sm:text-base sm:leading-8">
                       {faq.answer}
                     </p>
                   </div>

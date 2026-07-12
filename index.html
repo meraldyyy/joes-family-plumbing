@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Joe's Family Plumbing | 24/7 Licensed Plumbers</title>
 
@@ -70,6 +71,20 @@
 
   .testimonial-slide { display: none; }
   .testimonial-slide.active { display: block; }
+
+  /* --- RESPONSIVE TYPOGRAPHY ROOT --- */
+html {
+  /* Skala mobile murni: mengecilkan ukuran dasar font (14px) agar tidak over-zoom */
+  font-size: 87.5%; 
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 640px) {
+  html {
+    /* Kembali ke ukuran normal (16px) saat masuk layar tablet/desktop */
+    font-size: 100%; 
+  }
+}
 </style>
 
   </head>

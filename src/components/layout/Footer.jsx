@@ -13,7 +13,7 @@ export default function Footer() {
           <a href="#top" className="flex items-center">
           <img
             src="/assets/logo.avif"
-            alt="Joe's Plumbing"
+            alt="Joe's Plumbing" 
             className="h-14 w-auto"
           />
         </a>

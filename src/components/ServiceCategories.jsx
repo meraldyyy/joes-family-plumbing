@@ -6,21 +6,21 @@ export default function ServiceCategories() {
       title: "Residential Plumbing",
       description:
         "Trusted repairs and installations for homes of every size, from leaking faucets to complete repiping.",
-      image: "./src/assets/h1.png",
+      image: "/assets/h1.png",
       alt: "Modern residential kitchen with sink and faucet",
     },
     {
       title: "Commercial Plumbing",
       description:
         "Keep your business running with preventative maintenance and rapid repairs for offices, restaurants, and retail spaces.",
-      image: "./src/assets/h2.png",
+      image: "/assets/h2.png",
       alt: "Commercial building plumbing system",
     },
     {
       title: "Emergency Plumbing",
       description:
         "Burst pipe at 2 AM? Our emergency team is available 24/7 to restore your plumbing fast.",
-      image: "./src/assets/h3.png",
+      image: "/assets/h3.png",
       alt: "Emergency plumbing repair",
     },
   ];

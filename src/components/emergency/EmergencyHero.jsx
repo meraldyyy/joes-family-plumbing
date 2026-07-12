@@ -73,7 +73,7 @@ export default function EmergencyHero() {
 
             <div className="overflow-hidden rounded-[30px] border border-white/20 shadow-[0_35px_80px_rgba(0,0,0,.25)]">
               <img
-                src="./src/assets/h3.png"
+                src="/assets/h3.png"
                 alt="Professional plumber"
                 className="h-[280px] w-full object-cover sm:h-[420px] lg:h-[620px]"
                 loading="lazy"
